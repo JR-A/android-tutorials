@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+       android:ems="10" EM크기 기준으로 수평 크기 10으로지정(size, 10자까지 입력할수 있도록 크기 지정)
+       android:hint="text" 입력 힌트 지정. 사용자가 입력 시작하면 사라짐
+       EditText 는 기본적으로 textArea 형태임. 여러 줄(multiLine) 입력 형태 - 한 줄만 입력하려면 singleLine으로 지정
+       android:inputType="text"            - singleLine으로 지정
+       android:inputType="textMultiLine"   - MultiLine으로 지정
+    -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="@string/edit_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sample"/>
+
+    <!--
+        이미지의 원래 크기대로 보여주지 않고 이미지 크기를 변경해서 보여줘야할 때 maxWidth, maxHeight 속성 지정
+        maxWidth, maxHeight 속성은 adjustViewBounds 속성과 함께 사용해야 이미지 종횡비(가로 세로 비율) 유지할 수 있음
+        이미지 종횡비 유지해야할 때 지정한 maxWidth, maxHeight가 비율에 맞지 않으면 비율 맞추기 위해 값을 자동으로 조절
+        tint: 이미지 위에 다른 색상 입힘
+    -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:adjustViewBounds="true"
+        android:tint="#800000ff"
+        app:srcCompat="@drawable/sample"/>
+
+</LinearLayout>
